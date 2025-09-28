@@ -23,9 +23,8 @@ Route::get('/profil', function () {
 });
 
 // Route for news page
-Route::get('/berita', function () {
-    return view('berita');
-});
+use App\Http\Controllers\NewsController;
+Route::get('/berita', [NewsController::class, 'publicIndex'])->name('berita.public');
 
 // Route for registration page
 Route::get('/pendaftaran', function () {
@@ -43,9 +42,7 @@ Route::get('/kontak-aspirasi', function () {
 });
 
 // Route for news management page
-Route::get('/manajemen-berita', function () {
-    return view('manajemenBerita');
-})->name('manajemen-berita');
+Route::get('/manajemen-berita', [NewsController::class, 'index'])->name('news.manage');
 
 // Placeholder login route
 // In a real application, this would be handled by Laravel's authentication system
@@ -57,3 +54,6 @@ Route::get('/login', function () {
 // Resource route for Aspirations
 use App\Http\Controllers\AspirationController;
 Route::resource('aspirations', AspirationController::class);
+
+// Resource route for News actions
+Route::resource('news', NewsController::class);
