@@ -1,0 +1,201 @@
+/* Reset dan body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0 10px;
+    font-weight: bold;
+    color: #8f5e00;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Menu Navigasi */
+.menu {
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-left: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.menu a:first-child {
+    border-left: none;
+}
+
+/* Container Utama */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 15px;
+    width: 25%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}
+
+.sidebar-section {
+    margin-bottom: 10px;
+}
+
+.sidebar-title {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.sidebar-title:hover {
+    text-decoration: underline;
+}
+
+.sidebar-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sidebar-list li {
+    margin-bottom: 3px;
+}
+
+.sidebar-list li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.sidebar-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Konten Utama */
+.main {
+    background-color: #fff;
+    padding: 20px;
+    width: 75%;
+    box-sizing: border-box;
+}
+
+.main-content-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+}
+
+.main-content-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.main h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.main h3 {
+    font-size: 1.4em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.main p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Daftar di dalam main */
+.main-list {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-list li {
+    margin-bottom: 5px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.main-list li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.main-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+    color: #555;
+    text-align: right;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+/* Aktifkan menu yang sedang dibuka */
+.menu a:nth-child(6) {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
