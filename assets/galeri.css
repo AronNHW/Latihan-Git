@@ -1,0 +1,27 @@
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+}
+
+img {
+    max-width: 10%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
